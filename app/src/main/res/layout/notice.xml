@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notice_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="82dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/notice_content_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sb_329_gbzh_bg_tx_db"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_close_notice"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:src="@drawable/iv_close_notice_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_notice_gift_bg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#DC143C"
+            app:layout_constraintBottom_toBottomOf="@id/iv_notice_gift"
+            app:layout_constraintLeft_toLeftOf="@id/iv_notice_gift"
+            app:layout_constraintRight_toRightOf="@id/iv_notice_gift"
+            app:layout_constraintTop_toTopOf="@id/iv_notice_gift" />
+
+        <ImageView
+            android:id="@+id/iv_notice_gift"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:background="#50000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_get_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tv_get_gift_bg"
+            android:paddingLeft="7dp"
+            android:paddingTop="4dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="4dp"
+            android:text="马上领取"
+            android:textColor="#8F64FF"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="给你扫了辆共享单车，召唤你骑过来房间领取礼物啦~"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_notice_gift"
+            app:layout_constraintRight_toLeftOf="@id/tv_get_gift"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="14:59"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@id/tv_get_gift"
+            app:layout_constraintTop_toBottomOf="@id/tv_get_gift" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/sb_329_icon_tq_djs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_get_gift"
+            app:layout_constraintTop_toBottomOf="@id/tv_get_gift" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
